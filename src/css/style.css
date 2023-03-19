@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+.container {
+  width: 1260px;
+  margin: 48px auto;
+  padding: 0 10px; }
+  @media (max-width: 1280px) {
+    .container {
+      width: 1004px; } }
+  @media (max-width: 1024px) {
+    .container {
+      width: 730px;
+      padding: 0 15px; } }
+  @media (max-width: 800px) {
+    .container {
+      width: calc(100% - 40px);
+      padding: 0 20px; } }
+  .container .header {
+    text-transform: uppercase;
+    text-align: center;
+    font: bold 20px/24px "Comic Sans MS", serif;
+    color: #66d43d;
+    margin-bottom: 32px; }
+  .container .description {
+    font: normal 18px/20px "Comic Sans MS", serif;
+    color: #171717;
+    margin-bottom: 32px;
+    text-align: justify; }
+  .container .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px; }
+    @media (max-width: 800px) {
+      .container .form {
+        flex-wrap: wrap; } }
+    .container .form #url {
+      border: 1px solid #66d43d;
+      padding: 16px 24px;
+      width: 75%;
+      border-radius: 5px;
+      color: #171717;
+      font: normal 14px/18px "Comic Sans MS", serif;
+      outline: none;
+      transition: border 0.25s ease-in-out;
+      cursor: pointer; }
+      .container .form #url.error {
+        border: 1px solid #cf3c3c; }
+      .container .form #url::placeholder {
+        color: #171717;
+        font: normal 14px/18px "Comic Sans MS", serif; }
+      .container .form #url:hover {
+        border: 1px solid #50bc3c; }
+      @media (max-width: 800px) {
+        .container .form #url {
+          width: 100%; } }
+    .container .form .submit {
+      background-image: linear-gradient(90deg, #66d43d 3.42%, #11df9e 98.99%);
+      color: white;
+      padding: 16px 24px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font: normal 18px/20px "Comic Sans MS", serif;
+      width: 20%;
+      text-align: center;
+      transition: background-image 0.25s ease-in-out; }
+      .container .form .submit:hover {
+        background-image: linear-gradient(90deg, #66d43d 30%, #11df9e 50.99%); }
+      @media (max-width: 800px) {
+        .container .form .submit {
+          width: 100%; } }
+  .container .result {
+    font: normal 18px/20px "Comic Sans MS", serif;
+    color: #171717;
+    text-align: center;
+    user-select: all; }
+  .container div.error {
+    font: normal 18px/20px "Comic Sans MS", serif;
+    color: #cf3c3c;
+    text-align: center;
+    text-transform: uppercase; }
+  .container .back {
+    font: normal 18px/20px "Comic Sans MS", serif;
+    color: #171717;
+    text-align: center;
+    margin-top: 32px;
+    display: block; }
+
+/*# sourceMappingURL=style.css.map */

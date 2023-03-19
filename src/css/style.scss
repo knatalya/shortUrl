@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  width: 1260px;
+  margin: 48px auto;
+  padding: 0 10px;
+
+  @media(max-width: 1280px) {
+      & {
+        width: 1004px;
+      }
+  }
+
+  @media(max-width: 1024px) {
+    & {
+      width: 730px;
+      padding: 0 15px;
+    }
+  }
+
+  @media(max-width: 800px) {
+    & {
+      width: calc(100% - 40px);
+      padding: 0 20px;
+    }
+  }
+
+  .header {
+    text-transform: uppercase;
+    text-align: center;
+    font: bold 20px/24px "Comic Sans MS", serif;
+    color: #66d43d;
+    margin-bottom: 32px;
+  }
+
+  .description {
+    font: normal 18px/20px "Comic Sans MS", serif;
+    color: #171717;
+    margin-bottom: 32px;
+    text-align: justify;
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px;
+
+    @media(max-width: 800px) {
+      & {
+          flex-wrap: wrap;
+      }
+    }
+
+    #url {
+      border: 1px solid #66d43d;
+      padding: 16px 24px;
+      width: 75%;
+      border-radius: 5px;
+      color: #171717;
+      font: normal 14px/18px "Comic Sans MS", serif;
+      outline: none;
+      transition: border 0.25s ease-in-out;
+      cursor: pointer;
+
+      &.error {
+        border: 1px solid #cf3c3c;
+      }
+
+      &::placeholder {
+        color: #171717;
+        font: normal 14px/18px "Comic Sans MS", serif;
+      }
+
+      &:hover {
+        border: 1px solid #50bc3c;
+      }
+
+      @media(max-width: 800px) {
+        & {
+          width: 100%;
+        }
+      }
+    }
+
+    .submit {
+      background-image: linear-gradient(90deg,#66d43d 3.42%,#11df9e 98.99%);
+      color: white;
+      padding: 16px 24px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font: normal 18px/20px "Comic Sans MS", serif;
+      width: 20%;
+      text-align: center;
+      transition: background-image 0.25s ease-in-out;
+
+      &:hover {
+        background-image: linear-gradient(90deg,#66d43d 30%,#11df9e 50.99%);
+      }
+
+      @media(max-width: 800px) {
+        & {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .result {
+    font: normal 18px/20px "Comic Sans MS", serif;
+    color: #171717;
+    text-align: center;
+    user-select: all;
+  }
+
+  div.error {
+    font: normal 18px/20px "Comic Sans MS", serif;
+    color: #cf3c3c;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .back {
+    font: normal 18px/20px "Comic Sans MS", serif;
+    color: #171717;
+    text-align: center;
+    margin-top: 32px;
+    display: block;
+  }
+}
